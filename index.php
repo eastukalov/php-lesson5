@@ -1,6 +1,6 @@
 <?php
 	$filename='phonebook.json';
-	$str=iconv('CP1251','UTF-8',file_get_contents($filename));
+	$str=iconv('CP1251','UTF-8',file_get_contents(__DIR__ . '\\' . $filename));
 	$array=json_decode($str, true);
 ?>
 
